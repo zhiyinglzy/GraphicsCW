@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <title>Maze</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.123.0/build/three.module.js"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="start-menu">
+            <p style="text-align:center">
+                CLICK TO PLAY <br/>
+                Move: WASD <br/>
+                Look: MOUSE
+            </p>
+        </div>
+        <div id="intro"></div>
+        <div id="menu">
+            <p>Click To Resume</p>
+        </div>
+        <div id="torch-count"></div>
+        <div id="torch-hint">Press T to light torch</div>
+        <div id="torch-hand"></div>
+    </div>
+
+    <script src="lib/mazegen.js"></script>
+    <script src="lib/tools.js"></script>
+
+
+    <script src="js/pointerlock.js"></script>
+    <script type="module" src="js/assetmanager.js"></script>
+    <script type="module" src="js/inputmanager.js"></script>
+    <script type="module" src="js/torch.js"></script>
+    <script type="module" src="js/utils.js"></script>
+    <script type="module" src="js/mazegame.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
